@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS动画</title>
+    <style type="text/css">
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        p:hover{
+            animation-duration: 500ms;/*动画的过渡时间*/
+            animation-delay: 200ms;
+            animation-name: lfh;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;/*变大之后变小*/
+        }
+        @keyframes lfh {
+            from{
+                width: 125px;
+                height: 125px;
+                background-color: #ffc244;
+            }
+            50%{
+                width: 150px;
+                height: 150px;
+                background-color: #ffc244;
+            }
+            75%{
+                width: 175px;
+                height: 175px;
+                background-color: #ffc244;
+            }
+            to{
+                width: 200px;
+                height: 200px;
+                background-color: #ffc244;
+            }
+        }
+    </style>
+</head>
+<body>
+<p></p>
+</body>
+</html>

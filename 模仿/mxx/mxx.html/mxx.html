@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/iconfont.css">
+    <link rel="stylesheet" href="../lib/all.css">
+    <script src="../lib/jq.js"></script>
+</head>
+<style>
+    body{
+        background-image: url(../lib/background.jpg);
+    }
+    @font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+      url('iconfont.woff2') format('woff2'),
+      url('iconfont.woff') format('woff'),
+      url('iconfont.ttf') format('truetype'),
+      url('iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 50px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wrap{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.wrap .right_main{
+display: flex;
+flex-grow: 1;
+display: none;
+}
+.wrap .left{
+    /* background-color: royalblue; */
+    height: 100vh;
+    width: 180px;
+    border-right: 2px #ccc solid;
+}
+.wrap .right{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.wrap .right .nav{
+  border-bottom: 2px #ccc solid;
+    height: 45px;
+   position: relative;
+   width: 100%;
+}
+
+.nav_tit{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+.nav_tit li{
+    color: #ccc;
+    margin-right: 30px;
+    font-size: 19px;
+    height: 45px;
+    line-height: 45px;
+}
+.wrap .right .right_main .right_main_mid{
+    color: #ccc;
+    width: 1000px;
+border-right: #ccc 2px solid;
+}
+.wrap .right .right_main .right_main_right{
+    color: #ccc;
+    flex-grow: 1;
+}
+.left .obj li{
+    margin-top: 50px;
+    font-size: 24px;
+    color: #ccc;
+}
+.left .left_name{
+    font-size: 20px;
+    text-align: center;
+    color: #ccc;
+}
+.left .left_icon{
+    text-align: center;
+    color: #ccc;
+    margin-top: 15px;
+}
+.left .obj {
+   text-align: center;
+}
+
+.shake h2{
+    text-align: center;
+}
+.shake h2{
+    margin-top: 70px;
+}
+.shake_main {
+display: flex;
+justify-content: space-around;
+margin-top: 10px;
+
+
+}
+.home{
+    display: flex;
+  
+}
+.img{
+   color: white;
+   width: 800px;
+   margin: 0 auto;
+}
+.img h2{
+  text-align: center;
+ margin-bottom: 20px;
+ margin-top: 10px;
+}
+.img img{
+  width: 100%;
+  height: 160px;
+}
+.img7{
+     width: 337px; 
+     height: 600px;
+}
+</style>
+<body>
+    <div class="wrap">
+        <div class="left">
+            <div class="left_icon">
+                 <span class="iconfont">&#xe60c;</span>
+            </div>
+            <div class="left_name">用户名</div>
+            <ul class="obj">
+                <li class="title">首页</li>
+                <li class="title">前端</li>
+                <li class="title">后端</li>
+                <li class="title">创新交互</li>
+                <li class="title">移动开发</li>
+                <li class="title">机器学习</li>
+                <li class="title">游戏</li>
+            </ul>
+           
+        </div>
+        <div class="right">
+           <div class="nav">
+                <ul class="nav_tit">
+                    <li>设置</li>
+                    <li>登录</li>
+                    <li>注销</li>
+                </ul>
+        </div>
+           <div>
+            <div class="right_main home">
+                <div class="right_main_mid">
+                    <div class="shake_one shake">
+                        <h2 class='on'>活动一</h2>
+                        <div class="shake_main">
+                                <p>日期</p>
+                                <p>活动名称</p>
+                                <p>组别</p>
+                        </div>
+                        
+                    </div>
+                    <div class="shake_two shake">
+                            <h2 class='on'>活动二</h2>
+                            <div class="shake_main">
+                                    <p>日期</p>
+                                    <p>活动名称</p>
+                                    <p>组别</p>
+                            </div>
+                        </div>
+                        <div class="shake_three shake">
+                                <h2 class='on'>活动三</h2>
+                                <div class="shake_main">
+                                        <p>日期</p>
+                                        <p>活动名称</p>
+                                        <p>组别</p>
+                                </div>
+                            </div>
+                            <div class="shake_four shake">
+                                    <h2 class='on'>活动四</h2>
+                                    <div class="shake_main">
+                                            <p>日期</p>
+                                            <p>活动名称</p>
+                                            <p>组别</p>
+                                    </div>
+                                </div>
+                </div>
+                <div class="right_main_right">
+
+                      
+                                        <img class="img7" src="../lib/7.jpg" alt="" srcset="">
+                </div>
+            </div>
+                <div class="right_main after">
+                    <div class="right_main_mid">
+                        <div class="shake_one shake">
+                            <h2 class='tw'>活动一</h2>
+                            <div class="shake_main">
+                                    <p>日期</p>
+                                    <p>活动名称</p>
+                                    <p>组别</p>
+                            </div>
+                            
+                        </div>
+                        <div class="shake_two shake">
+                                <h2 class='tw'>活动二</h2>
+                                <div class="shake_main">
+                                        <p>日期</p>
+                                        <p>活动名称</p>
+                                        <p>组别</p>
+                                </div>
+                            </div>
+                            <div class="shake_three shake">
+                                    <h2 class="tw">活动三</h2>
+                                    <div class="shake_main">
+                                            <p>日期</p>
+                                            <p>活动名称</p>
+                                            <p>组别</p>
+                                    </div>
+                                </div>
+                                <div class="shake_four shake">
+                                        <h2 class='tw'>活动四</h2>
+                                        <div class="shake_main">
+                                                <p>日期</p>
+                                                <p>活动名称</p>
+                                                <p>组别</p>
+                                        </div>
+                                    </div>
+                    </div>
+                    <div class="right_main_right">
+
+                      
+                        <img class="img7" src="../lib/7.jpg" alt="" srcset="">
+</div>
+                </div>
+                <div class="right_main">
+                    <div class="right_main_mid">
+                        <div class="shake_one shake">
+                            <h2 class='fo'>活动一</h2>
+                            <div class="shake_main">
+                                    <p>日期</p>
+                                    <p>活动名称</p>
+                                    <p>组别</p>
+                            </div>
+                            
+                        </div>
+                        <div class="shake_two shake">
+                                <h2 class='fo'>活动二</h2>
+                                <div class="shake_main">
+                                        <p>日期</p>
+                                        <p>活动名称</p>
+                                        <p>组别</p>
+                                </div>
+                            </div>
+                            <div class="shake_three shake">
+                                    <h2 class='fo'>活动三</h2>
+                                    <div class="shake_main">
+                                            <p>日期</p>
+                                            <p>活动名称</p>
+                                            <p>组别</p>
+                                    </div>
+                                </div>
+                                <div class="shake_four shake">
+                                        <h2 class='fo'>活动四</h2>
+                                        <div class="shake_main">
+                                                <p>日期</p>
+                                                <p>活动名称</p>
+                                                <p>组别</p>
+                                        </div>
+                                    </div>
+                    </div>
+                    <div class="right_main_right">
+
+                      
+                        <img class="img7" src="../lib/7.jpg" alt="" srcset="">
+</div>
+                </div>
+                    <div class="right_main after">
+                        <div class="right_main_mid">
+                            <div class="shake_one shake">
+                                <h2 class='fi'>活动一</h2>
+                                <div class="shake_main">
+                                        <p>日期</p>
+                                        <p>活动名称</p>
+                                        <p>组别</p>
+                                </div>
+                                
+                            </div>
+                            <div class="shake_two shake">
+                                    <h2 class='fi'>活动二</h2>
+                                    <div class="shake_main">
+                                            <p>日期</p>
+                                            <p>活动名称</p>
+                                            <p>组别</p>
+                                    </div>
+                                </div>
+                                <div class="shake_three shake">
+                                        <h2 class="fi">活动三</h2>
+                                        <div class="shake_main">
+                                                <p>日期</p>
+                                                <p>活动名称</p>
+                                                <p>组别</p>
+                                        </div>
+                                    </div>
+                                    <div class="shake_four shake">
+                                            <h2 class='fi'>活动四</h2>
+                                            <div class="shake_main">
+                                                    <p>日期</p>
+                                                    <p>活动名称</p>
+                                                    <p>组别</p>
+                                            </div>
+                                        </div>
+                        </div>
+                        <div class="right_main_right">
+
+                      
+                                <img class="img7" src="../lib/7.jpg" alt="" srcset="">
+        </div>
+                    </div>
+
+                    <div class="right_main after">
+                        <div class="right_main_mid">
+                            <div class="shake_one shake">
+                                <h2 class='si'>活动一</h2>
+                                <div class="shake_main">
+                                        <p>日期</p>
+                                        <p>活动名称</p>
+                                        <p>组别</p>
+                                </div>
+                                
+                            </div>
+                            <div class="shake_two shake">
+                                    <h2 class='si'>活动二</h2>
+                                    <div class="shake_main">
+                                            <p>日期</p>
+                                            <p>活动名称</p>
+                                            <p>组别</p>
+                                    </div>
+                                </div>
+                                <div class="shake_three shake">
+                                        <h2 class="si">活动三</h2>
+                                        <div class="shake_main">
+                                                <p>日期</p>
+                                                <p>活动名称</p>
+                                                <p>组别</p>
+                                        </div>
+                                    </div>
+                                    <div class="shake_four shake">
+                                            <h2 class='si'>活动四</h2>
+                                            <div class="shake_main">
+                                                    <p>日期</p>
+                                                    <p>活动名称</p>
+                                                    <p>组别</p>
+                                            </div>
+                                        </div>
+                        </div>
+                        <div class="right_main_right">
+
+                      
+                                <img class="img7" src="../lib/7.jpg" alt="" srcset="">
+        </div>
+                    </div>
+                    <div class="right_main">
+                        <div class="right_main_mid">
+                            <div class="shake_one shake">
+                                <h2 class='se'>活动一</h2>
+                                <div class="shake_main">
+                                        <p>日期</p>
+                                        <p>活动名称</p>
+                                        <p>组别</p>
+                                </div>
+                                
+                            </div>
+                            <div class="shake_two shake">
+                                    <h2 class='se'>活动二</h2>
+                                    <div class="shake_main">
+                                            <p>日期</p>
+                                            <p>活动名称</p>
+                                            <p>组别</p>
+                                    </div>
+                                </div>
+                                <div class="shake_three shake">
+                                        <h2 class='se'>活动三</h2>
+                                        <div class="shake_main">
+                                                <p>日期</p>
+                                                <p>活动名称</p>
+                                                <p>组别</p>
+                                        </div>
+                                    </div>
+                                    <div class="shake_four shake">
+                                            <h2 class='se'>活动四</h2>
+                                            <div class="shake_main">
+                                                    <p>日期</p>
+                                                    <p>活动名称</p>
+                                                    <p>组别</p>
+                                            </div>
+                                        </div>
+                        </div>
+                        <div class="right_main_right">
+
+                      
+                                <img class="img7" src="../lib/7.jpg" alt="" srcset="">
+        </div>
+                    </div>
+                        <div class="right_main after">
+                            <div class="right_main_mid">
+                                <div class="shake_one shake">
+                                    <h2 class='ei'>活动一</h2>
+                                    <div class="shake_main">
+                                            <p>日期</p>
+                                            <p>活动名称</p>
+                                            <p>组别</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="shake_two shake">
+                                        <h2 class='ei'>活动二</h2>
+                                        <div class="shake_main">
+                                                <p>日期</p>
+                                                <p>活动名称</p>
+                                                <p>组别</p>
+                                        </div>
+                                    </div>
+                                    <div class="shake_three shake">
+                                            <h2 class="ei">活动三</h2>
+                                            <div class="shake_main">
+                                                    <p>日期</p>
+                                                    <p>活动名称</p>
+                                                    <p>组别</p>
+                                            </div>
+                                        </div>
+                                        <div class="shake_four shake">
+                                                <h2 class='ei'>活动四</h2>
+                                                <div class="shake_main">
+                                                        <p>日期</p>
+                                                        <p>活动名称</p>
+                                                        <p>组别</p>
+                                                </div>
+                                            </div>
+                            </div>
+                            <div class="right_main_right">
+
+                      
+                                <img class="img7" src="../lib/7.jpg" alt="" srcset="">
+        </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+               
+                    <div class="right_main before displayn">
+                   
+                    
+                                <div class="img">
+    
+                            <img src="../lib/4.jpg" alt="" srcset="">
+                            <h2>九月的秋语</h2>
+                            <p>　九月的秋，写满了聒静与淡雅。夏天驱动万物躁动的灵魂在秋风的平抚下渐渐安稳，静谧的风语，吹动了秋天神秘的面纱。枫叶不知何时变得火红;沉甸甸的果实将树枝压弯;辛劳的农民开始收割赖以生长的作物;田边的野草失去了夏日里粗犷的风格，耷拉着脑袋，随地铺展开来。秋荡漾着成熟的喜悦，秋是属于生命的凋落。时间万物都在无声中变化，井然有序，条条有理。九月的秋放佛告白前的序幕，正酝酿着属于深秋最浓厚的氛围。连绵的秋雨赋予了秋天最浪漫、最朦胧的色彩。它不像夏日里狂放的暴雨那样肆无忌惮，它如同诗人的忧伤，如同纷扰的愁丝，如同分离恋人的相思，无边的缠绵中带着难以割舍的遗憾。九月的秋风夹杂这充满忧伤的雨雾给林叶铺了一层密密的水珠，滋润着微微发黄的叶片，给予它们成长的源泉。雨雾又把屋瓦浸染上氤氲的气息，随瓦渠凝聚成滴，敲打出一份秋天特有的音律。静谧的旋律随风蔓延开来，仿佛秋在呢喃，仿佛风在思念。雨雾笼罩了山，笼罩了整片天，远处的山峦在细雨的衬托下仿佛有着梦幻般的感触。依稀可见的轮廓使山峰显得格外俊逸，偶尔传来一阵鸟鸣，在朦胧的阴雨中尤为清亮。河边的石桥也被连绵的秋雨涤荡干净，露出了沧桑历史刻在上面的层层印记，碧波荡漾的水面上浮着几篇落叶，不知要飘往何方。九月的秋雨，一直在下，带着秋的忧伤，混着淡淡的芬芳，细细的倾诉着关于生命的真谛。在九月的秋里往往会想起那些关于她和某种难以辨明的缘分，可是季候之神不懂世间情分，兀自驾驭这风骑把树叶匆匆扫下，任由它们在空中娇滴滴的旋落。季候之神能掌握万物变化的规律，偏偏理不清关于情的种种纷争。出于怜悯之心，给予他们萧瑟的冷清，来磨练他们敏感又脆弱的心灵。叶在风中的细雨，是秋给的安慰?还是愁聚成的忧伤?我依旧分不清。远方的夕阳，是挂在山头的一盏昏黄的灯光，拼着残存的力气放出最后一缕薄光，满江秋水被映得通红，郝然显出燃烧的晚霞。不时有蝉在叫，声渐漫长，知识辨不清方向，等凉风四起时，已迷失了高亢。九月的夕阳，是秋最温情的外现，仿佛她在微笑，柔情脉脉又那样动人心弦，令人难忘又迷惘。九月是秋的低吟浅唱，它吧过往编成了曲调，当萧瑟的风掀开树叶厚重的序幕时，万物已缓慢奏响属于生命的篇章。听，在九月的秋语中带着</p>  
+                        </div>
+                    </div>
+                    <div class="right_main before displayn">
+                   
+                    
+                                <div class="img">
+    
+                            <img src="../lib/3.jpg" alt="" srcset="">
+                            <h2>时光清浅，且歌且行</h2>
+                            <p>浮动的是时光，沉淀的是记忆。曾经，这两个字包含的太多，说不清的人和事，道不明的想念，各种美好与遗憾。特别不想一个人孤单寂寞，但是，成长是每个人的必经之路。告别了童年，明天再向我招手。迎面吹来的微风，将童年心愿带走。时间总是让人猝不及防，仍记得小时候朴实无华的日子。每天等着动画片的播放，那时晚上九点就要睡觉，当时狮子王热播，再看一集是我最大的心愿。现在，再去翻阅那些动画，熟悉的感觉油然而生。不知不觉间，已经过去很多年了。没有手机，没有网络，和小伙伴一起追逐打闹。玩着丢手绢，老鹰抓小鸡，跳房子的儿时游戏。看到隔壁家的哥哥，在溜冰，吵着要哥哥送一双溜冰鞋。一双浅紫色的溜冰鞋，没有人教，刚开始扶着墙慢慢滑，到后来可以熟练的到处跑。再后来，那双溜冰鞋就没有穿过了。音乐课上，老师教大家唱童年。我们都相视而笑，因为歌词唱出了我们的心声。欢快的旋律，歌词已是回忆。一天又一天，迷迷糊糊的童年，一年又一年，盼望长大的童年。那时我们无忧无虑的玩耍，看咖啡色的夕阳又要落下。 不会在电视机前等着动画片播放，不会再把白酒当成水喝掉，不会认为鱼儿冷而加热水，不会再去摘四叶草。昔日的故友，你们可好?曾幻想着拥有哆啦A梦的百宝箱，其实我已经拥有了，父母就是我的百宝箱。你需要什么，他们都可以“变”出来。还记得，爸爸骑着自行车，带我去捉蜻蜓，蝴蝶，去树林玩。无论爸爸去哪，我都要跟着。现在，也不会黏着爸爸了。是啊，我已经长大了。父母两鬓斑白，故友已经各奔东西。时间太短，指缝太宽，带着过去</p>  
+                        </div>
+                    </div>
+                    <div class="right_main before displayn">
+                   
+                    
+                                <div class="img">
+    
+                            <img src="../lib/2.jpg" alt="" srcset="">
+                            <h2>中秋等月</h2>
+                            <p>中秋之夜初，坐在窗台下静静的等着嫦娥怀抱玉兔莅临天下。防蝇罩笼着几盘下菜，台阶上的几盆盛开的三角梅摇着头，灯光摇曳、远处邈邈的汽笛声忽隐忽现，高处树上的蝉声稀疏了很多、弱了很多，池边的云杉树似潇洒的看客站在那儿，一切都虚席以待，只待对影相酌。月亮还是没有出来。每一年中秋都赏月，今年也不例外。只是今年漂泊在外，客居他乡，只是一个人罢了。想想父母过世的早，爱妻去世已有几年了，心里沉沉的。好在儿子在外地从事他喜欢的工作，也有一些小志向，这是比较欣慰的。为什么要过中秋啊，月亮到是年年有，可是人呢、心境呢？树影摇曳着落在窗棂上，一阵秋风吹过，落在了院子里的水池中，吹起一阵阵轻微的波浪。四周高耸的楼房、灯光倒映在水里，晃动着。渐渐的，水面平静下来后，池中央倒映出浩瀚的星光，银河就在那里翻涌着，浩浩汤汤。院子里的树木的叶子也是五颜六色的。最高处的杨树已经秃了顶，时不时有枯黄的、轻飘飘的飞了下来，悄无声息的落在地上。低处的柳树仍然翠绿翠绿的，像是用碧玉装扮出来的一样。墙角的枫树最是好看，满树五彩缤纷，有褐色的、红色的、浅黄、深黄色的，不过还是绿色居多，这是秋风的劲道还是不够吧！水池南边的一小块空地上，种了一些谷子，如今谷穗已经一肭儿多长了，沉甸甸的。微风下点着头，好像和你打着招呼，说着“晚上好！”一阵时断时续的书声突然从南面的高楼中随风传来，嫩嫩的、脆脆的，听着也就是三四岁孩童的模样。“床前明月光，疑是地上霜。举头望明月，低头思故乡！”是在学诗歌吗？亦或在赏月？难道他看到月亮了？不去猜了，只是闭上眼，细细的品着他读诗的韵调，心也就融化在这韵调里了！月亮还没有出来，杯里的酒在微风下荡起了一圈圈涟漪，似乎正要扬起感情的风帆！我就这样静静的等着、享受着</p>  
+                        </div>
+                    </div>
+                    <div class="right_main before displayn">
+                   
+                    
+                                <div class="img">
+    
+                            <img src="../lib/1.jpg" alt="" srcset="">
+                            <h2>人，这一生</h2>
+                            <p>　起风了，转凉了，面对自然的改变，我们总是能够很好的，从外在来调节与包装自身的状况。 而人这一生，我们却不能很好地掌握自己的命运，面对生命有太多不确定的因素，影响着你我的判断，又有多少的无常，将无法预计，无法直视前方的路程。或许生活本就如此，它虽不像四季流转的那么分明，却又掺杂了不计其数的任性与电闪雷鸣。看得清环境的存在，我们却常常看不清自己，明不了他人，让其一生都在迷雾里挣扎着前行……有人说，活着就是与苦难做斗争。在一生的时光里，没有人只会四季如春，在光影变幻里，伴随着你我同行。有太多的时候，环境影响着人类，人却无力改其环境。环境不会因为你我的关系而骤然扭转，而人却常常会因景生情，在或悲或喜，或增或减中来来去去。有时候，人常常会反思。人这一生为谁而过，为爱人而活，为子女而奔波，或为父母的终老而尽责。也许有人说，为了及时享乐，为了吃饱穿暖，为了名誉，也为了地位，或许是为金钱而拼搏，可到最后又得到了什么，剩下了什么。看着身边人的离世，是否会坦然，明白人生的无常，无惧于他人，无悔于自己。又是否有人在老去的那一天，无论已历经了多少风霜雨雪，都能从容、淡然，不留遗憾的，自在安详。是啊!不留遗憾，珍惜如今，活在当下的每一天，善待身边的每一个人，不为别的，只为自己，看着他人，面对微笑的脸上，那种由心而发出的快乐，又岂是他人可以定夺!世界在变，环境在变，唯心不变。无论时代如何去更新，爱这个世界是唯一无法进化替代的物体。心在，爱在;爱在，心在。这一生，活着活着才会明白，物质永远也填不满一颗空虚的心。有人一生不甘，一生较劲，一直违心于时光，正如对抗其自然，最后总是身心疲惫，伤痕累累。那又得花多少的时间，去抚平那些在岁月里留下的痕迹? 与其曾让自己苦苦地停留在遗憾、悔恨中度过的人们，不如就此回头，看看自己挣扎时的容颜，听听自己失衡已久的心音，找回理想、真实的自己，不为难迷失在漩涡深处中的自己。正如这晚秋时的静美，它并非是要一直地沉浸。此刻，你听树叶间，随风而动，沙沙作响的声音，好似在告诉世人:它的退场只是为爱的回归，来年也将是再一次。</p>  
+                        </div>
+                    </div>                  
+                    <div class="right_main after_main displayn">
+                    <div class="img">
+
+                        <img src="../lib/5.jpg" alt="" srcset="">
+                        <h2>有些相遇，只为还债</h2>
+                        <p>秋夜凉凉，微光隐隐，是谁，又一次打开了我思念的匣子，记忆的帐幔。好久没有走过这条街，因为我不敢触摸思念。对你我有太多的亏欠，只是没有机会说抱歉。不曾想，一张照片，一首老歌打开了我思念你说喜欢听那首歌，这才发现，它像极了你我。你说为什么美好的事物总是短暂的，这才发现，那真的是你我。在这苍凉的夜里，突然好想你。海上生明月，天涯可共此时?想知道你在干什么，想知道你过得好不好，甚至想知道，你现在还是一个人吗?那张照片上，你我笑的真甜，甜到心窝了;那张照片上，你我很纯真，对一切都充满了希望与期盼;那张照片上，你我充满了幸福，对未来寄予厚望。就这样，思念，想念肆虐我全身，我是这般无助，却又只能拿它温存了。你成了我唯一的爱恋，也成了我唯一必须的放下。我想，我终究会放下你，然却不能遗忘。心里的某个角落，成了不可触碰的遗憾与美好。我曾梦想，我的人生可以以山水为伴，以笔墨为骨，以诗书为枝。有诗一样的灵魂，水一样的灵秀，花一样的芬芳!有空山里的清气，有暖阳般的温暖，有如卿一般的恋人!你曾告诉我，只要心中有梦，梦想就一定会实现;只要你我同心，想要拥有的就都会得到;只要不吝坚持，一切都会得偿所愿。风风雨雨，几经沧桑。我却连最初的梦想也实现不了—弄丢了你。弄丢了你，我人生的太阳也落下去了好久，我在黑暗里挣扎，在回忆里哭泣，在成长中追悔!历经几载，我终于明白。原来，一经错过，就是永远。需要经历，才能成长。你，是我人生必经的磨练，成长的劫数。认清生活，认清这一切后，我不再伤悲，不再哭泣，把整个青春复制粘贴到心灵的最深处。终于，我的太阳又升起来了，他热情的拥抱我;月亮也出来了，他温柔的给我人生诗意。有些相遇，只为还债，续一场前世的缘，注定没有结果。同行一段，只为遇见更好的自己，只为填充人生的画卷，你我便是如此。所以，你注定是我人生里的缺憾，青春里的白莲花，永远的得不到!</p>  
+                           </div>
+                    </div> 
+                    <div class="right_main before displayn">
+                   
+                    
+                        <div class="img">
+
+                    <img src="../lib/6.jpg" alt="" srcset="">
+                    <h2>活着真不容易</h2>
+                    <p>　小时候，瘦瘦的自己，爬了很多小山头，急切得让自己完全没有享受过一程山水一程收获的喜悦。干巴巴的直达山头，低垂的头冒着汗，还有粗如牛的喘气相伴。很享受这种没目的的冲劲，吹着和谐的山风，看着在树上盘旋的鸟，骨子里透着年少的毛躁。不经意间，岁月从一座座相连的山，伴随留寄天涯的成长，如流水般从记忆的深处盘旋而去。很多少时的记忆会默然谢幕，只留下依稀的模样，淡化得只剩气息，或者缥缈的烟。透过秋色的稻香，还有那江暖鸭先知的一季季春色。我从不迫切中，掉进笔墨的世界。原来，过往只是流莺。当白纸沾上笔墨时，自己的心情就像长着翅膀一样欢快地飞翔。很多精致的文字，往往最先让你的爱情开花结果。爱是从点点滴滴做起，直接跨过流年。情是从一瓣瓣花香读起，中间隔着回味。当时间指向二十岁的自己时，感觉一半是火焰，一半是海洋。很多东西一直燃烧了又熄灭，熄灭了又燃烧，重复着想冲开与被网住的重复。二十岁，自己只是坐在梦想的一头。细细翻阅着，过早忘却那应有的节奏。以致读得太快，忘了年华，嚼得太细，又蹉跎了青春。绕着年轮，经历着红尘的洗礼，被呵护着的一株生命的悄然成长，直至三十而立。看着别人对自己所谓的勾画，轻描淡写。很不习惯那些穿插着倒叙的自己，很唯美，但没有半丝棱角。自己是个快意直言的人，即使杂草丛生，流言蜚语，依然靠着思维天马行空，渲染着自己的小世界。依然相信天空会有一道小彩虹，为自己而立，在等待中慢慢攀升。自己也是一个梦想比天高的孩子，自幼圈了很多想法，却往往不一而终，直至爱情落幕。偏爱那些在最美的年华，放牧了自己，接近了心灵，留守了梦想的人。因为，曾经自己错过折腾的机会。偶尔会想，梦想的脚步赶得上自己的生命吗？人生的回忆只剩守望吗？既然生命是靠自己去演绎的梯台，那就应该有自己的想法，选择。沿着生命最初的时间轴，思考着自己颇为认可的读法:应该如读书般，遵循从中间对折法。三十岁之前更多的是为自己而活，三十岁之后更多的是为别人而活。跳过三十岁之后，生活的岖岖坑坑，活着不再是生命的简单延续。活着，更是在找一种心的平衡，一种情的诠释，带着雪片的温度。纵然活着，会有一路的孤独，会有情感起落的折磨。当你见证了生活的原味，当你见证了一棵树的成长过程，不管你是否已不再年轻，不管你是否已年过花甲，你的人生已写上满满的“值得”。很多时候，活着是为了关爱与被关爱。而非借助一些光鲜的服饰之类，悦人悦己。</p>  
+                </div>
+                    </div> 
+                   <div class="right_main before displayn">
+                   
+                    
+                <div class="img">
+
+            <img src="../lib/4.jpg" alt="" srcset="">
+            <h2>九月的秋语</h2>
+            <p>　九月的秋，写满了聒静与淡雅。夏天驱动万物躁动的灵魂在秋风的平抚下渐渐安稳，静谧的风语，吹动了秋天神秘的面纱。枫叶不知何时变得火红;沉甸甸的果实将树枝压弯;辛劳的农民开始收割赖以生长的作物;田边的野草失去了夏日里粗犷的风格，耷拉着脑袋，随地铺展开来。秋荡漾着成熟的喜悦，秋是属于生命的凋落。时间万物都在无声中变化，井然有序，条条有理。九月的秋放佛告白前的序幕，正酝酿着属于深秋最浓厚的氛围。连绵的秋雨赋予了秋天最浪漫、最朦胧的色彩。它不像夏日里狂放的暴雨那样肆无忌惮，它如同诗人的忧伤，如同纷扰的愁丝，如同分离恋人的相思，无边的缠绵中带着难以割舍的遗憾。九月的秋风夹杂这充满忧伤的雨雾给林叶铺了一层密密的水珠，滋润着微微发黄的叶片，给予它们成长的源泉。雨雾又把屋瓦浸染上氤氲的气息，随瓦渠凝聚成滴，敲打出一份秋天特有的音律。静谧的旋律随风蔓延开来，仿佛秋在呢喃，仿佛风在思念。雨雾笼罩了山，笼罩了整片天，远处的山峦在细雨的衬托下仿佛有着梦幻般的感触。依稀可见的轮廓使山峰显得格外俊逸，偶尔传来一阵鸟鸣，在朦胧的阴雨中尤为清亮。河边的石桥也被连绵的秋雨涤荡干净，露出了沧桑历史刻在上面的层层印记，碧波荡漾的水面上浮着几篇落叶，不知要飘往何方。九月的秋雨，一直在下，带着秋的忧伤，混着淡淡的芬芳，细细的倾诉着关于生命的真谛。在九月的秋里往往会想起那些关于她和某种难以辨明的缘分，可是季候之神不懂世间情分，兀自驾驭这风骑把树叶匆匆扫下，任由它们在空中娇滴滴的旋落。季候之神能掌握万物变化的规律，偏偏理不清关于情的种种纷争。出于怜悯之心，给予他们萧瑟的冷清，来磨练他们敏感又脆弱的心灵。叶在风中的细雨，是秋给的安慰?还是愁聚成的忧伤?我依旧分不清。远方的夕阳，是挂在山头的一盏昏黄的灯光，拼着残存的力气放出最后一缕薄光，满江秋水被映得通红，郝然显出燃烧的晚霞。不时有蝉在叫，声渐漫长，知识辨不清方向，等凉风四起时，已迷失了高亢。九月的夕阳，是秋最温情的外现，仿佛她在微笑，柔情脉脉又那样动人心弦，令人难忘又迷惘。九月是秋的低吟浅唱，它吧过往编成了曲调，当萧瑟的风掀开树叶厚重的序幕时，万物已缓慢奏响属于生命的篇章。听，在九月的秋语中带着</p>  
+        </div>
+                   </div>        
+                </div> 
+        </div>
+    </div>
+</body>
+<script>
+
+function one(){
+        $('.home').css({display:'flex'})
+    }
+    one()
+   $('.title').each(function(i){
+
+    
+    $(this).click(function(){
+  
+    $('.right_main:eq('+i+')').css({display:'flex'}).siblings().css({display:'none'})
+    console.log(111111111)
+   
+   }) 
+   })
+
+$('.on').click(function(){
+    $('.right_main:eq(7)').css({display:'flex'}).siblings().css({display:'none'})
+})
+
+$('.tw').click(function(){
+    $('.right_main:eq(8)').css({display:'flex'}).siblings().css({display:'none'})
+})
+
+$('.fo').click(function(){
+    $('.right_main:eq(9)').css({display:'flex'}).siblings().css({display:'none'})
+})
+
+$('.fi').click(function(){
+    $('.right_main:eq(10)').css({display:'flex'}).siblings().css({display:'none'})
+})
+
+$('.si').click(function(){
+    $('.right_main:eq(11)').css({display:'flex'}).siblings().css({display:'none'})
+})
+
+$('.se').click(function(){
+    $('.right_main:eq(12)').css({display:'flex'}).siblings().css({display:'none'})
+})
+
+$('.ei').click(function(){
+    $('.right_main:eq(13)').css({display:'flex'}).siblings().css({display:'none'})
+})
+</script>
+
+   
+</html>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e1d768d3-e2bc-4191-a84b-0ae1c2b5ff8b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WNtXAj8aGwrvNcvUA4fQGSLg2T" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\个人文档\WEB开发" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1d768d3-e2bc-4191-a84b-0ae1c2b5ff8b" name="Default Changelist" comment="" />
+      <created>1579001916570</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579001916570</updated>
+      <workItem from="1579001918401" duration="12818000" />
+      <workItem from="1579276252457" duration="3667000" />
+      <workItem from="1579436611727" duration="612000" />
+      <workItem from="1579438591229" duration="103000" />
+      <workItem from="1579438698220" duration="59000" />
+      <workItem from="1579438783288" duration="152000" />
+      <workItem from="1579438962037" duration="12992000" />
+      <workItem from="1579466420171" duration="9901000" />
+      <workItem from="1579506239967" duration="6197000" />
+      <workItem from="1579538923648" duration="4311000" />
+      <workItem from="1579560133861" duration="86000" />
+      <workItem from="1579560507612" duration="20000" />
+      <workItem from="1579560909103" duration="60000" />
+      <workItem from="1579595181665" duration="1000" />
+      <workItem from="1579952439217" duration="225000" />
+      <workItem from="1579975418346" duration="703000" />
+      <workItem from="1581626968404" duration="691000" />
+      <workItem from="1581645475723" duration="1980000" />
+      <workItem from="1581718948638" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

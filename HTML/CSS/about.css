@@ -1,0 +1,16 @@
+#footer{
+    background:#4C4C4C;
+    clear:both;
+}
+#copy{
+    height:80px;
+    line-height:80px;
+    color:#fff;
+    width:950px;
+    margin:0 auto;
+    font-size:14px;
+    font-family:'微软雅黑';
+}
+#contect{
+    color:white ;
+}

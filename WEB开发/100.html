@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+    <script>
+        $(function(){
+            var scroll_offset=$("#site").offset(); //site为目标位置的ID
+            $(window).scroll(function(){
+                var scrolltop=$(this).scrollTop(); //获取当前页面顶部的坐标
+                if(scrolltop>=scroll_offset.top){	//将当前页面顶部top值与 目标位置的top值做比较
+                    $(".scrollSite").show();     //当当前窗口顶部坐标大于目标位置时，按钮显示   否则隐藏按钮
+                }else{
+                    $(".scrollSite").hide();
+                }
+            });
+            $(".scrollSite_btn").click(function(){  //scrollSite_btn 为触发该函数的组件的class（“样式用class，动作用id”，
+                $("html,body").animate({scrollTop:scroll_offset.top},500); //	利用scrollTop将页面顶部位置指定到某坐标
+            });
+        });
+    </script>
+    <style type="text/css">
+        .test ul{
+            list-style-type: none;
+        }
+        .test ul li{
+            float: left;
+            width: 50px;
+            height: 20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .test ul li ul{
+            display: none;
+        }
+        .test li :hover ul{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+<div class="test">
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C
+            <ul>
+                <li>C1</li>
+                <li>C2</li>
+                <li>C3</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+<a id="scrollSite_btn">sdnj</a>
+</body>
+</html>

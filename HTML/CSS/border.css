@@ -1,0 +1,64 @@
+/*------------------------------------------------------------------
+    [Full Screen Carousel]
+------------------------------------------------------------------*/
+.full-screen {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    position: fixed;
+}
+/*------------------------------------------------------------------
+    [Carousel]
+------------------------------------------------------------------*/
+.carousel-indicators {
+    left: auto;
+    width: auto;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.carousel-centered {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+
+.carousel-title {
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+.button-circle{
+    text-align:center;
+    border:2px solid white;
+    padding:10px 40px;
+    width:350px;
+    border-radius:25px;
+    -moz-border-radius:25px; /* 老的 Firefox */
+}
+.button-circle:hover{
+    border: 2px solid black;
+    background: white;
+    color: #4C4C4C;
+}
+.introduce{
+    font-size: 15px;
+    font-family: 黑体;
+    margin-bottom: 40px !important;
+}
+@media (max-width: 768px) {
+    .carousel-title {
+        font-size: 60px;
+        font-family: "华文细黑";
+    }
+}
+
+
+
