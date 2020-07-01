@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    font-size: 18px;
+    color: black;
+    background-image: url("../imgs/00002.jpg");
+    background-repeat: repeat-y;
+    background-size: 125%;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "新宋体";
+
+}
+ul.menu,ul.submenu{
+    background-color: white;
+}
+ul.menu::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ul.menu>li{
+    float: right;
+    width: 120px;
+    line-height: 3em;
+    height: 3em;
+    text-align: center;
+    cursor: pointer;
+}
+ul.submenu{
+    display: none;
+}
+ul.submenu>li{
+    border-bottom: 1px solid white;
+}
+ul.menu>li:hover{
+    border-bottom: black solid;
+}
+ul.menu>li:hover>a{
+    color:mediumseagreen;
+}
+ul.menu>li:hover>ul.submenu{
+    display: block;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.animated{
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+}
+.fadeIN{
+    animation-name: fade;
+    animation-direction: normal;
+}
